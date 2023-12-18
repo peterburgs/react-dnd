@@ -1,24 +1,3 @@
 {
-  "widgets": [
-    {
-      "id": "7103097360",
-      "type": "button",
-      "props": {}
-    },
-    {
-      "id": "0458330355",
-      "type": "paragraph",
-      "props": {
-        "text": "text 1"
-      }
-    },
-    {
-      "id": "2459644206",
-      "type": "button",
-      "props": {
-        "message": "Message 1",
-        "text": "Button 1"
-      }
-    }
-  ]
+  "widgets": {}
 }

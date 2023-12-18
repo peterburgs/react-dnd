@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Widget, WidgetType } from "typing/widget";
 import styles from "./WidgetCard.module.scss";
-import Button from "../common/Buttons/Button";
+import Button from "../../common/Button/Button";
 import { useDispatch } from "react-redux";
 import { selectSelectedWidget, setSelectedWidget } from "store/widgetSlice";
 import classnames from "classnames";

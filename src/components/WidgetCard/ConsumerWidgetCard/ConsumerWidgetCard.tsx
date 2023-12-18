@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Widget, WidgetType } from "typing/widget";
-import Button from "../../common/Buttons/Button";
+import Button from "../../common/Button/Button";
 
 interface ConsumerWidgetCardProps {
   widget: Widget;

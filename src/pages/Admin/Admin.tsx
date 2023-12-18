@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./Admin.module.scss";
-import AdminActions from "./components/Actions/AdminActions";
-import AdminPanel from "./components/Panel/AdminPanel";
+import AdminActions from "../../components/Admin/Actions/AdminActions";
+import AdminPanel from "../../components/Admin/Panel/AdminPanel";
 
 const AdminPage: FC = () => {
   return (

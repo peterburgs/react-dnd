@@ -1,8 +1,7 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Widget, WidgetType } from "typing/widget";
-import { RootState } from "./store";
 import { httpClient } from "../http/client";
-import { error } from "console";
+import { RootState } from "./store";
 
 export interface WidgetState {
   widgets: Widget[];

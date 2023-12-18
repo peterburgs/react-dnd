@@ -7,7 +7,7 @@ import {
   selectWidgets,
 } from "store/widgetSlice";
 import { getWidgetLabel } from "utils/getWidgetLabel";
-import WidgetCard from "../../WidgetCard/WidgetCard";
+import WidgetCard from "../../WidgetCard/AdminWidgetCard/WidgetCard";
 import styles from "./DropZone.module.scss";
 
 interface DropZoneProps {

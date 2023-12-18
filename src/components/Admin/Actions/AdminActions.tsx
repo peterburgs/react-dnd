@@ -1,4 +1,4 @@
-import Button from "components/common/Buttons/Button";
+import Button from "components/common/Button/Button";
 import { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "store/store";

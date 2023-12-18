@@ -1,0 +1,16 @@
+.widgetContainer {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 16px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &.active {
+    background-color: pink;
+  }
+}
+
+.widgetContainer + .widgetContainer {
+  margin-top: 8px;
+}

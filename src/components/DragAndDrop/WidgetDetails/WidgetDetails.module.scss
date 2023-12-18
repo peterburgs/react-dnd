@@ -1,0 +1,27 @@
+.container {
+  padding: 10px;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .input {
+    width: 30%;
+    line-height: 24px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 2px 6px;
+  }
+
+  .buttonContainer {
+    @extend .column;
+    gap: 10px;
+  }
+
+  .paragraph {
+    @extend .column;
+  }
+}

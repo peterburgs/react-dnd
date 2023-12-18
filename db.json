@@ -1,24 +1,24 @@
 {
   "widgets": [
     {
-      "id": "9042492317",
+      "id": "7103097360",
+      "type": "button",
+      "props": {}
+    },
+    {
+      "id": "0458330355",
       "type": "paragraph",
       "props": {
-        "text": "hello world"
+        "text": "text 1"
       }
     },
     {
-      "id": "1010648015",
+      "id": "2459644206",
       "type": "button",
       "props": {
-        "message": "alert 123",
-        "text": "button text 1"
+        "message": "Message 1",
+        "text": "Button 1"
       }
-    },
-    {
-      "id": "3130038767",
-      "type": "paragraph",
-      "props": {}
     }
   ]
 }

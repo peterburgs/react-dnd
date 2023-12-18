@@ -7,12 +7,13 @@ interface ConsumerWidgetCardProps {
 }
 
 const ConsumerWidgetCard: FC<ConsumerWidgetCardProps> = ({ widget }) => {
+  console.log(1111, widget);
   return widget.type === WidgetType.Paragraph ? (
-    <div>{widget.props?.text}</div>
+    <div>{widget.props?.text || widget.type}</div>
   ) : (
     <div>
       <Button
-        title={widget.props?.text || ""}
+        title={widget.props?.text || widget.type}
         onClick={() => alert(widget.props?.message)}
       />
     </div>

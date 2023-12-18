@@ -6,16 +6,16 @@ export const defaultWidgets: Widget[] = [
     id: generateId(),
     type: WidgetType.Paragraph,
     props: {
-      message: "",
-      text: "",
+      message: undefined,
+      text: undefined,
     },
   },
   {
     id: generateId(),
     type: WidgetType.Button,
     props: {
-      message: "",
-      text: "Button",
+      message: undefined,
+      text: undefined,
     },
   },
 ];

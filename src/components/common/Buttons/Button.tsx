@@ -7,9 +7,16 @@ interface ButtonProps {
   onClick: () => void;
   variant?: "highlight";
   className?: string;
+  isDisabled?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({ title, variant, className, onClick }) => {
+const Button: FC<ButtonProps> = ({
+  title,
+  variant,
+  className,
+  isDisabled,
+  onClick,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -18,6 +25,7 @@ const Button: FC<ButtonProps> = ({ title, variant, className, onClick }) => {
         variant && variant === "highlight" && styles.highlight,
         className && className
       )}
+      disabled={isDisabled}
     >
       {title}
     </button>

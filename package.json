@@ -2,9 +2,11 @@
   "name": "react-dnd",
   "version": "0.1.0",
   "private": true,
+  "author": "peterburgs.vn@gmail.com",
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -16,6 +18,7 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@types/react-redux": "^7.1.33",
+    "axios": "^1.6.2",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4"
   }
 }

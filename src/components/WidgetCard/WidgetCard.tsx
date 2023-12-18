@@ -15,8 +15,12 @@ const WidgetCard: FC<WidgetCardProps> = ({ widget }) => {
   const selectedWidget = useSelector(selectSelectedWidget);
   const dispatch = useDispatch();
 
+  const tagLabel =
+    widget.id === selectedWidget?.id
+      ? selectedWidget.props?.text
+      : widget.props?.text;
+
   const handleClick = () => {
-    console.log(widget);
     dispatch(setSelectedWidget(widget));
   };
 
@@ -29,13 +33,10 @@ const WidgetCard: FC<WidgetCardProps> = ({ widget }) => {
       onClick={handleClick}
     >
       {widget.type === WidgetType.Button ? (
-        <Button
-          onClick={handleClick}
-          title={widget.props?.text || widget.type}
-        />
+        <Button onClick={handleClick} title={tagLabel || widget.type} />
       ) : (
         <div>
-          <p>{widget.props?.text || widget.type}</p>
+          <p>{tagLabel || widget.type}</p>
         </div>
       )}
     </div>

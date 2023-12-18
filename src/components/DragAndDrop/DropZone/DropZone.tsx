@@ -1,7 +1,11 @@
 import { useMousePosition } from "hooks/useMousePosition";
 import { FC, useRef } from "react";
 import { useSelector } from "react-redux";
-import { selectDraggingWidgetType, selectWidgets } from "store/widgetSlice";
+import {
+  selectDraggingWidgetType,
+  selectSelectedWidget,
+  selectWidgets,
+} from "store/widgetSlice";
 import { getWidgetLabel } from "utils/getWidgetLabel";
 import WidgetCard from "../../WidgetCard/WidgetCard";
 import styles from "./DropZone.module.scss";
@@ -16,6 +20,7 @@ const DropZone: FC<DropZoneProps> = ({ handleOnDrop, handleDragOver }) => {
 
   const widgets = useSelector(selectWidgets);
   const draggingWidgetType = useSelector(selectDraggingWidgetType);
+  const selectedWidget = useSelector(selectSelectedWidget);
 
   const { coords } = useMousePosition(ref);
 
@@ -34,7 +39,7 @@ const DropZone: FC<DropZoneProps> = ({ handleOnDrop, handleDragOver }) => {
           Dragging: {draggingWidgetType && getWidgetLabel(draggingWidgetType)}
         </div>
         <div>Instances: {widgets.length}</div>
-        <div>Config: </div>
+        <div>Config: {selectedWidget && JSON.stringify(selectedWidget)}</div>
       </div>
       <div className={styles.widgetContainer}>
         {widgets.map((widget, index) => (

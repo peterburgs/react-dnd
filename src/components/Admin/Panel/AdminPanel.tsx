@@ -7,7 +7,7 @@ import { defaultWidgets } from "typing/constants";
 import { Widget } from "typing/widget";
 import { addWidget, setDraggingWidgetType } from "store/widgetSlice";
 import styles from "./AdminPanel.module.scss";
-import { generateId } from "../../../../utils/generateId";
+import { generateId } from "utils/generateId";
 
 const AdminPanel: FC = () => {
   const dispatch = useDispatch();

@@ -17,9 +17,7 @@ export const useMousePosition = (ref: RefObject<HTMLDivElement>) => {
 
     window.addEventListener("mousemove", handleWindowMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleWindowMouseMove);
-    };
+    return () => window.removeEventListener("mousemove", handleWindowMouseMove);
   }, [ref]);
 
   return { coords };

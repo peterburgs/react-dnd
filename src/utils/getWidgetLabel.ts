@@ -1,4 +1,4 @@
-import { WidgetType } from "../typing/widget";
+import { WidgetType } from "typing/widget";
 
 export const getWidgetLabel = (widgetType: WidgetType): string => {
   switch (widgetType) {

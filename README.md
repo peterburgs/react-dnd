@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# I-ON Communications Technical Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr/>
 
-## Available Scripts
+## How to start project
 
-In the project directory, you can run:
+1. Clone project and cd to the project's directory
+2. Install all dependencies:
 
-### `npm start`
+```bash
+yarn
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Start json-server:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+yarn server
+```
 
-### `npm test`
+<strong>Make sure the file db.json is in form of:</strong>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```json
+{
+  "widgets": {}
+}
+```
 
-### `npm run build`
+4. Start React app in another terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
+Drag a widget on the left sidebar and drop it in the panel, then click on a widget to make it active:
+![image](https://github.com/peterburgs/react-dnd/assets/48356852/327ceb54-f589-408f-bac7-f0bf17f2aeca)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Admin can edit the content of the button and the paragraph:
+![image](https://github.com/peterburgs/react-dnd/assets/48356852/4aea1520-170c-4fff-9d0f-e5e714c617c7)
 
-### `npm run eject`
+Admin can save data by clicking on the button `Save`:
+![image](https://github.com/peterburgs/react-dnd/assets/48356852/960f047a-8122-4d21-843c-ce48e55cecd2)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The consumer can only view the data:
+![image](https://github.com/peterburgs/react-dnd/assets/48356852/f0e2811c-793d-4e74-8896-c81f5f95764c)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The consumer clicks on the button and see the button alert message:
+![image](https://github.com/peterburgs/react-dnd/assets/48356852/068bf52c-2654-43f1-bf82-ec06120494d2)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
